@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Maths Is Fun
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark-theme.css" id="dark-theme-style" disabled>
+</head>
+
+<body>
+    <div class="calculatorBody">
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+        <div class="display">
+            <input type="text" id="displayScreen" disabled>
+        </div>
+        <div class="buttons">
+            <div class="row">
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="deleteLastCharacter()">Del</button>
+                <button onclick="calculateSquareRoot()">√</button>
+                <button onclick="appendToDisplay('/')">/</button>
+            </div>
+            <div class="row">
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('*')">*</button>
+            </div>
+            <div class="row">
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('-')">-</button>
+            </div>
+            <div class="row">
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('+')">+</button>
+            </div>
+            <div class="row">
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="appendToDisplay('**')">^</button>
+                <button onclick="calculateResult()">=</button>
+            </div>
+            <div class="row">
+                <button onclick="calculateSin()">sin</button>
+                <button onclick="calculateCos()">cos</button>
+                <button onclick="calculateTan()">tan</button>
+            </div>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+
+</html>

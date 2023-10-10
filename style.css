@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #3C4042;
+    color: #fff; 
+}
+
+.calculatorBody {
+    width: 360px;
+    margin: 0px auto;
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.display input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 32px;
+    border: none;
+    background-color: #BFBFBF;
+    color: #000; 
+    text-align: right;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.buttons button {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    margin: 5px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    transition: transform 0.1s, background-color 0.3s, box-shadow 0.9s;
+}
+
+.buttons button:hover {
+    background-color: #459949;
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.theme-switch {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+}
+
+.theme-switch input[type="checkbox"] {
+    display: none;
+}
+
+.slider {
+    position: relative;
+    width: 40px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    left: 2px;
+    top: 2px;
+    transition: 0.4s;
+}
+
+input[type="checkbox"]:checked + .slider:before {
+    transform: translateX(20px);
+}
